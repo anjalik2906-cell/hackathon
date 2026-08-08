@@ -37,7 +37,7 @@ function Cell({ day, state, size = 'md', label }) {
   const base = sizes[size] || sizes.md
 
   const styles = {
-    done : 'bg-flame shadow-[0_0_6px_rgba(255,176,32,0.55)]',
+    done: 'bg-flame shadow-[0_0_6px_rgba(255,176,32,0.55)]',
     partial: 'bg-gradient-to-br from-flame to-github/70',
     missed: 'bg-transparent ring-1 ring-danger/60',
     today: 'bg-elevated ring-2 ring-flame animate-pulse',
