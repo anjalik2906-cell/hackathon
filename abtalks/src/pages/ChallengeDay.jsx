@@ -47,7 +47,7 @@ export default function ChallengeDay() {
         setLinkedinUrl={setLinkedinUrl}
         githubValid={githubValid}
         linkedinValid={linkedinValid}
-        error={error}
+        error ={error}
         onSubmit={handleSubmit}
         dayNum={dayNum}
       />
