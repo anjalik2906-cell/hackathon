@@ -4,7 +4,7 @@ import React from 'react'
  * ProofGrid — the signature device of the redesign.
  * A 60-cell grid echoing the GitHub contribution graph the students
  * already live inside every day. Each cell encodes one day's proof state:
- *   done      -> filled amber (streak fire)
+ *   done      -> fill amber (streak fire)
  *   partial   -> half github/half linkedin split
  *   missed    -> hollow red ring
  *   today     -> pulsing outline
