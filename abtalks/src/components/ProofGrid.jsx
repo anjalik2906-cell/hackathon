@@ -10,7 +10,7 @@ import React from 'react'
  *   today     -> pulsing outline
  *   upcoming  -> dim placeholder
  *
- * Used three ways in this app:
+ * Used three ways in this app as follows:
  *   - Landing page: a seeded "preview" grid, sets expectation before signup
  *   - Dashboard: the student's real progress, full 60 days
  *   - Day page: a compact 12-cell slice around the current day
