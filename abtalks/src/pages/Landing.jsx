@@ -64,6 +64,10 @@ function Hero() {
         post. In two months, recruiters won't need your resume — they'll have
         your receipts.
       </p>
+      <div className="mt-4 flex items-center gap-2 text-xs text-faint font-mono">
+  <span className="text-flame">✓</span>
+  <span>60 focused tasks · public proof · zero cost</span>
+</div>
 
       <div className="mt-6 flex flex-col gap-2.5">
         <Link
