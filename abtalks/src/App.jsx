@@ -37,9 +37,11 @@ function BottomNav({ pathname }) {
             <Link
               key={item.to}
               to={item.to}
-              className={`flex flex-col items-center gap-1 px-6 py-1.5 rounded-xl transition-colors ${
-                active ? 'text-flame' : 'text-muted hover:text-ink'
-              }`}
+              className={`flex flex-col items-center gap-1 px-6 py-2 rounded-xl transition-all duration-200 ${
+  active
+    ? 'text-flame bg-flame/10'
+    : 'text-muted hover:text-ink hover:bg-black/5'
+}`}
             >
               <Icon className="w-5 h-5" />
               <span className="text-[11px] font-medium">{item.label}</span>
