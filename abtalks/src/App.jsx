@@ -6,7 +6,7 @@ import ChallengeDay from './pages/ChallengeDay.jsx'
 
 export default function App() {
   const { pathname } = useLocation()
-  const showNav =pathname !== '/'
+  const showNav = pathname !== '/'
 
   return (
     <div className="min-h-screen bg-base">
