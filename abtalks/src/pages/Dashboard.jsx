@@ -201,7 +201,9 @@ function TodayTaskCard({ todayEntry, currentDay }) {
         <div className="rounded-xl2 bg-surface border border-line p-5 active:scale-[0.99] transition-transform">
           <div className="flex items-center justify-between mb-2">
             <span className="text-xs font-mono text-flame">today · day {currentDay}</span>
-            <span className="text-faint text-sm">→</span>
+            <span className="text-sm">
+  {todayEntry.github && todayEntry.linkedin ? '✓' : '→'}
+</span>
           </div>
           <h2 className="font-display text-[17px] font-semibold text-ink leading-snug">
             {todayEntry.title}
@@ -259,7 +261,13 @@ function ProgressCard({ student, days, doneCount, percentComplete }) {
 function StandingCard({ student }) {
   return (
     <section className="px-5 mb-3">
-      <div className="rounded-xl2 border border-line bg-surface p-5 flex items-center justify-between">
+      <div
+  className={`rounded-xl2 border p-5 active:scale-[0.99] transition-all ${
+    todayEntry.github && todayEntry.linkedin
+      ? 'border-flame/30 bg-flame/5'
+      : 'border-line bg-surface'
+  }`}
+>
         <div>
           <p className="text-xs text-muted font-mono">your standing</p>
           {student.rank ? (
