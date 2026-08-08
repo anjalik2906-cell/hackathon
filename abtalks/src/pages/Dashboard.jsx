@@ -233,8 +233,8 @@ function ProgressCard({ student, days, doneCount, percentComplete }) {
           <div>
             <p className="text-xs text-muted font-mono">overall progress</p>
             <p className="font-display text-xl font-semibold text-ink mt-0.5">
-              Day {student.currentDay} <span className="text-muted text-sm font-body font-normal">/ {student.totalDays}</span>
-            </p>
+  {doneCount} <span className="text-muted text-sm font-body font-normal">of {student.totalDays} days completed</span>
+</p>
           </div>
           <span className="font-mono text-sm text-flame">{percentComplete}%</span>
         </div>
