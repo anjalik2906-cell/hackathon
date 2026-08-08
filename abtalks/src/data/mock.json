@@ -1,0 +1,58 @@
+{
+  "student": {
+    "name": "Ishita Rao",
+    "track": "Full-Stack Web",
+    "college": "IIIT Nagpur",
+    "avatarInitials": "IR",
+    "isNewProfile": false,
+    "joinedDay": 1,
+    "currentDay": 12,
+    "totalDays": 60,
+    "currentStreak": 4,
+    "longestStreak": 9,
+    "streakBrokenOnDay": 8,
+    "rank": 34,
+    "totalStudents": 812,
+    "badges": [
+      { "id": "week1", "label": "Week 1 Finisher", "earned": true },
+      { "id": "comeback", "label": "Comeback Kid", "earned": true },
+      { "id": "halfway", "label": "Halfway There", "earned": false },
+      { "id": "consistent", "label": "10-Day Streak", "earned": false }
+    ]
+  },
+  "days": [
+    { "day": 1, "status": "done", "title": "Set up your dev environment", "github": true, "linkedin": true },
+    { "day": 2, "status": "done", "title": "Build a static profile card", "github": true, "linkedin": true },
+    { "day": 3, "status": "done", "title": "Add CSS flexbox layout", "github": true, "linkedin": true },
+    { "day": 4, "status": "done", "title": "Fetch data from a public API", "github": true, "linkedin": true },
+    { "day": 5, "status": "done", "title": "Add loading and error states", "github": true, "linkedin": true },
+    { "day": 6, "status": "done", "title": "Deploy your first app", "github": true, "linkedin": true },
+    { "day": 7, "status": "done", "title": "Write your Week 1 recap post", "github": true, "linkedin": true },
+    { "day": 8, "status": "missed", "title": "Add a search + filter feature", "github": false, "linkedin": false },
+    { "day": 9, "status": "done", "title": "Introduce React components", "github": true, "linkedin": true },
+    { "day": 10, "status": "done", "title": "Manage state with hooks", "github": true, "linkedin": true },
+    { "day": 11, "status": "done", "title": "Connect a form to local storage", "github": true, "linkedin": true },
+    { "day": 12, "status": "today", "title": "Build a habit tracker UI", "github": false, "linkedin": false }
+  ],
+  "dayDetail": {
+    "12": {
+      "day": 12,
+      "track": "Full-Stack Web",
+      "title": "Build a habit tracker UI",
+      "difficulty": "Medium",
+      "estimatedTime": "90–120 min",
+      "brief": "Recruiters scanning GitHub love seeing state management done cleanly. Today you'll build a small habit tracker: a list of habits, a way to mark today done, and a streak count per habit stored in local storage.",
+      "requirements": [
+        "A list of at least 3 habits, each showing a running streak count",
+        "A button to mark a habit complete for today",
+        "State persists on refresh using local storage",
+        "Mobile-first layout — this should feel usable one-handed"
+      ],
+      "stretchGoal": "Add a 7-day mini heatmap per habit, similar to a GitHub contribution graph.",
+      "resources": [
+        { "label": "React useEffect + localStorage pattern", "url": "#" },
+        { "label": "Designing habit trackers — case study", "url": "#" }
+      ]
+    }
+  }
+}

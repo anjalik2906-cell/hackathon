@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  background: #0B1020;
+  background-image:
+    radial-gradient(60% 40% at 50% 0%, rgba(108,140,255,0.10) 0%, rgba(108,140,255,0) 60%),
+    radial-gradient(50% 30% at 100% 100%, rgba(255,176,32,0.06) 0%, rgba(255,176,32,0) 60%);
+  color: #EDEFF7;
+  font-family: 'Inter', sans-serif;
+}
+
+::selection {
+  background: rgba(255,176,32,0.3);
+}
+
+/* visible keyboard focus, always */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid #FFB020;
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.app-shell {
+  max-width: 480px;
+  margin: 0 auto;
+  min-height: 100%;
+  position: relative;
+}
+
+@keyframes rise {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.rise {
+  animation: rise 0.5s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+@keyframes flicker {
+  0%, 100% { transform: scaleY(1) rotate(-1deg); }
+  50% { transform: scaleY(1.06) rotate(1deg); }
+}
+.flicker {
+  animation: flicker 2.4s ease-in-out infinite;
+  transform-origin: bottom center;
+}
