@@ -261,13 +261,7 @@ function ProgressCard({ student, days, doneCount, percentComplete }) {
 function StandingCard({ student }) {
   return (
     <section className="px-5 mb-3">
-      <div
-  className={`rounded-xl2 border p-5 active:scale-[0.99] transition-all ${
-    todayEntry.github && todayEntry.linkedin
-      ? 'border-flame/30 bg-flame/5'
-      : 'border-line bg-surface'
-  }`}
->
+     <div className="rounded-x12 border border-line bg-surface p-5">
         <div>
           <p className="text-xs text-muted font-mono">your standing</p>
           {student.rank ? (
